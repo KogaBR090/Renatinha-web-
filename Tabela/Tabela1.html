@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 24px;
+            font-family: Monocraft, Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .tabela-horarios {
+            width: 1200px;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .celula {
+            border: 1px solid black;
+            padding: 8px 10px;
+            vertical-align: top;
+        }
+
+        .topo-cabecalho {
+            background-color: #f15a24;
+            color: white;
+            padding: 12px 16px;
+        }
+
+        .barra-topo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-topo {
+            position: absolute;
+            top: 30px;
+            left: 200px;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .titulo-topo {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .linha-meta-celula {
+            background-color: #eeeeee;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .linha-meta .meta-contagem {
+            background-color: #bcd3f2;
+        }
+
+        .dia-celula {
+            background-color: #d9d9d9;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .curso {
+            background-color: #f15a24;
+        }
+
+        .horario {
+            width: 120px;
+            text-align: center;
+            font-weight: 700;
+            background-color: white;
+        }
+
+        .materia {
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .titulo-materia {
+            font-weight: 700;
+        }
+
+        .meta,
+        .professor,
+        .sala,
+        .chave {
+            margin-top: 6px;
+            font-weight: 600;
+        }
+
+        .codigo {
+            margin-top: 6px;
+            padding: 2px 6px;
+            font-weight: 800;
+        }
+
+        .intervalo-celula {
+            background-color: #d9d9d9;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .celula.flex {
+            background-color: #e4511f;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .rodape {
+            width: 1200px;
+            margin: 10px auto 0;
+            font-size: 13px;
+        }
+
+        .rodape-titulo {
+            font-weight: 800;
+        }
+
+        .rodape-detalhe {
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="tabela-horarios">
+            <colgroup>
+                <col style="width: 120px;">
+                <col style="width: 210px;">
+                <col style="width: 210px;">
+                <col style="width: 210px;">
+                <col style="width: 210px;">
+                <col style="width: 210px;">
+            </colgroup>
+            <thead>
+                <tr class="topo">
+                    <th colspan="6" class="celula topo-cabecalho">
+                        <div class="barra-topo">
+                            <div class="logo-topo">UniFil</div>
+                            <div class="titulo-topo">Engenharia de Software - 72</div>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="linha-meta">
+                    <th colspan="2" class="celula linha-meta-celula">CUBO (B6) ENSW - E1 - 2025 turma B</th>
+                    <th colspan="3" class="celula linha-meta-celula">Rep: Gabriel Yuki Silva Koga (49 alunos)</th>
+                    <th class="celula linha-meta-celula meta-contagem">49 ALUNOS</th>
+                </tr>
+                <tr class="dias">
+                    <th class="celula dia-celula curso">ENSW</th>
+                    <th class="celula dia-celula">SEGUNDA</th>
+                    <th class="celula dia-celula">TERÇA</th>
+                    <th class="celula dia-celula">QUARTA</th>
+                    <th class="celula dia-celula">QUINTA</th>
+                    <th class="celula dia-celula">SEXTA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="celula horario">19h00 - 20h30</td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Cálculo numérico: Sistema em Ponto Flutuante</div>
+                        <div class="meta">GH: 2</div>
+                        <div class="codigo">MAPC230014</div>
+                        <div class="professor">Tânia Camila Kochmanscky Goulart</div>
+                        <div class="sala">1039</div>
+                        <div class="chave">(6zcmqd62)</div>
+                    </td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Algoritmos e Estrutura de Dados: Árvores</div>
+                        <div class="meta">GH: 4</div>
+                        <div class="codigo">ALLP221008</div>
+                        <div class="professor">Ricardo Petri Silva</div>
+                        <div class="sala">Lab 7</div>
+                        <div class="chave">(5pnx5fqh)</div>
+                    </td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Algoritmos e Estrutura de Dados: Árvores</div>
+                        <div class="meta">GH: 4</div>
+                        <div class="codigo">ALLP221008</div>
+                        <div class="professor">Ricardo Petri Silva</div>
+                        <div class="sala">Lab 7</div>
+                        <div class="chave">(5pnx5fqh)</div>
+                    </td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Desenvolvimento Web: Introdução ao HTML, CSS e Javascript</div>
+                        <div class="meta">GH: 4</div>
+                        <div class="codigo">COAP230028</div>
+                        <div class="professor">Renata Porto Gransoti</div>
+                        <div class="sala">1039</div>
+                        <div class="chave">(vk47ahfz)</div>
+                    </td>
+                    <td class="celula flex">Escolha apenas uma Flex disponível neste horário consultando a tabela de
+                        Flex
+                    </td>
+                </tr>
+                <tr class="intervalo">
+                    <td class="celula horario">20h30 - 20h45</td>
+                    <td class="celula intervalo-celula">INTERVALO</td>
+                    <td class="celula intervalo-celula">INTERVALO</td>
+                    <td class="celula intervalo-celula">INTERVALO</td>
+                    <td class="celula intervalo-celula">INTERVALO</td>
+                    <td class="celula intervalo-celula">INTERVALO</td>
+                </tr>
+                <tr>
+                    <td class="celula horario">20h45 - 22h15</td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Desenvolvimento Web: Introdução ao HTML, CSS e Javascript</div>
+                        <div class="meta">GH: 4</div>
+                        <div class="codigo">COAP230028</div>
+                        <div class="professor">Renata Porto Gransoti</div>
+                        <div class="sala">1039</div>
+                        <div class="chave">(vk47ahfz)</div>
+                    </td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Introdução a Banco de Dados: SQL Básico</div>
+                        <div class="meta">GH: 4</div>
+                        <div class="codigo">BDAD230003</div>
+                        <div class="professor">Robson Zambroti</div>
+                        <div class="sala">Lab 7</div>
+                        <div class="chave">(c7rrs6lt)</div>
+                    </td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Introdução a Banco de Dados: SQL Básico</div>
+                        <div class="meta">GH: 4</div>
+                        <div class="codigo">BDAD230003</div>
+                        <div class="professor">Robson Zambroti</div>
+                        <div class="sala">Lab 7</div>
+                        <div class="chave">(c7rrs6lt)</div>
+                    </td>
+                    <td class="celula materia">
+                        <div class="titulo-materia">Projeto Interdisciplinar III: PI VI</div>
+                        <div class="meta">GH: 2</div>
+                        <div class="codigo">PRIN220003</div>
+                        <div class="professor">Sérgio Kenji</div>
+                        <div class="sala">1039</div>
+                        <div class="chave">(yeohenbo)</div>
+                    </td>
+                    <td class="celula flex">Escolha apenas uma Flex disponível neste horário consultando a tabela de
+                        Flex
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="rodape">
+        <div class="rodape-titulo">ATIVIDADES DIGITAIS*</div>
+        <div class="rodape-detalhe">(EXTE230012) Práticas de Extensão I: Documentação - Professora Tânia Camila
+            Kochmanscky Goulart (luax67lf)</div>
+    </div>
+</body>
+
+</html>
